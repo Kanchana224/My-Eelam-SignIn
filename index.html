@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form-wrapper sign-in">
+      <form action="" id="loginForm">
+        <h2>Login</h2>
+        <div class="input-group">
+          <input type="text" required>
+          <label for="">Username</label>
+        </div>
+        <div class="input-group">
+          <input type="password" required>
+          <label for="">Password</label>
+        </div>
+        <div class="remember">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="button" onclick="validateForm('login')">Login</button>
+        <div class="signUp-link">
+          <p>Don't have an account? <a href="http://127.0.0.1:5501/signup.html#" class="signUpBtn-link" id="signupLink" onclick="redirectToSignUp()">Sign Up</a></p>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
