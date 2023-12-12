@@ -4,10 +4,10 @@ function validateForm(formType) {
     var password = document.querySelector('input[type="password"]').value;
     var agreement = document.querySelector('input[type="checkbox"]').checked;
 
-    if (formType === 'login') {
+    if (formType === 'login') {       
         if (username && password) {
             if (agreement) {
-                window.location.href = "http://127.0.0.1:5501/Home.html";
+                window.location.href = "http://127.0.0.1:5502/Home.html";
             } else {
                 alert("Please agree to the terms and conditions.");
             }

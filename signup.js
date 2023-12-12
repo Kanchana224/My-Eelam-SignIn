@@ -8,7 +8,7 @@ function validateForm(formType) {
     if (formType === 'signup') {
         if (username && password && email && phoneNumber) {
             if (agreement) {
-                window.location.href = "http://127.0.0.1:5501/Home.html";
+                window.location.href = "http://127.0.0.1:5502/Home.html";
             } else {
                 alert("Please agree to the terms and conditions.");
             }

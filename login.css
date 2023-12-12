@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
@@ -14,13 +16,13 @@ body {
 }
 .wrapper {
   position: relative;
-  width: 400px;
-  height:500px !important;
+  width:700px;
+  height:600px;
   background: #000;
   box-shadow: 0 0 50px #0ef;
   border-radius: 20px;
   padding: 40px;
-  overflow: hidden;
+
 }
 .wrapper:hover {
   animation: animate 1s linear infinite;
@@ -36,18 +38,9 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-
 }
-/* .wrapper.active .form-wrapper.sign-in {
-  transform: translateY(-450px);
-} */
-/* .wrapper .form-wrapper.sign-up {
-  position: absolute;
-  top: 450px;
-  left: 0;
-} */
 h2 {
-  font-size: 30px;
+  font-size: 50px;
   color: #fff;
   text-align: center;
 }
@@ -61,15 +54,15 @@ h2 {
   top: 50%;
   left: 5px;
   transform: translateY(-50%);
-  font-size: 16px;
+  font-size:20px;
   color: #fff;
   pointer-events: none;
   transition: .5s;
 }
 .input-group input {
-  width: 320px;
-  height: 40px;
-  font-size: 16px;
+  width:400px;
+  height:60px;
+  font-size:25px;
   color: #fff;
   padding: 0 5px;
   background: transparent;
@@ -85,7 +78,7 @@ h2 {
 }
 .remember label {
   color: #fff;
-  font-size: 14px;
+  font-size:20px;
 }
 .remember label input {
   accent-color: #0ef;
@@ -93,21 +86,22 @@ h2 {
 button {
   position: relative;
   width: 100%;
-  height: 40px;
+  height:50px;
   background: #0ef;
   box-shadow: 0 0 10px #0ef;
-  font-size: 16px;
+  font-size:25px;
   color: #000;
   font-weight: 500;
   cursor: pointer;
   border-radius: 30px;
   border: none;
-  outline: none;
+  outline: none;margin-top: 30px;
 }
 .signUp-link {
-  font-size: 14px;
+  font-size:20px;
   text-align: center;
-  margin: 15px 0;
+  margin:30px;
+  margin-top: 50px;
 }
 .signUp-link p {
   color: #fff;
@@ -120,3 +114,21 @@ button {
 .signUp-link p a:hover {
   text-decoration: underline;
 }
+/* @media(max-width:600px){
+  body .wrapper{
+    margin:30px;
+  }
+  body .wrapper.form-wrapper{
+    margin:40px;
+    padding:40px;
+  }
+  body .wrapper.form-wrapper form .input-group{
+    height:40px;
+    width:200px;
+  }
+  body .wrapper.form-wrapper form{
+    margin: 0;
+    padding: 0;
+    margin-right:80px;
+  }
+} */
