@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.suggestion-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:5px;
+    margin-top:10px;
+}
+.suggestion-title .suggestion-left{
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+    width:50%;
+}
+.suggestion-title .suggestion-left .image img{
+    border-radius: 50%;
+    margin-right:15px;
+    object-fit: cover;
+}
+.suggestion-title .suggestion-left .details .name{
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+.radio{
+ width:20px !important;
+ height:20px;
+}
+/* .d-grid {
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+} */
+/* .share{
+    width:90%;
+}
+@media(max-width:768px){
+    .share{
+        min-width:500px;
+        width:90%;
+    }
+} */
+  @media(min-width:569px){
+    .share{
+       width:90%;
+    }
+} 
+/* .icons{
+    position: sticky;
+    bottom: 0;
+    background-color: #ece0e0;
+    padding: 10px;
+    border-top: 1px solid #e1c1c1;
+    margin: 5px 5%;
+    z-index: 1;
+} */
+.form-control{
+    width: 300px;
+}
+.navbar{
+    position:sticky;
+    top: 0;
+}
+.bott{
+    position: sticky;
+    bottom: 0;
+    background-color: #f6f4f4;
+    padding: 10px;
+    border-top: 1px solid #cdc6c6;
+}
+.fab:hover{
+color: rgb(202, 13, 142);
+}
+.fas:hover{
+    color: rgb(202, 13, 142);
+    }
+    .share:hover{
+        background-color: rgb(225, 54, 171);
+        }
+ h4{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}        
