@@ -178,11 +178,13 @@ margin-left:10px;
 .rightside .profile-title{
     display: flex;
     align-items: center;
+    width:50%;
 }
 .rightside .profile-title .profile-left{
     display: flex;
     align-items: center;
     margin-right:40px;
+    width:70%;
 }
 .rightside .profile-title .profile-left .image img{
     border-radius: 50%;
@@ -192,16 +194,30 @@ margin-left:10px;
 padding-bottom: 3px;
 font-weight: bold;
 }
+.rightside .profile-title .profile-right{
+width:20%;
+}
+.rightside .profile-title .profile-right p{
+    margin-left:80px;
+    }
 .suggestion{
     display: flex;
-    margin-top:25px ;
+    align-items: center;
+    margin-top:25px;
     margin-bottom: 20px;
-
+    margin-left:40px;
 }
 .suggestion p{
-    margin-right:60px;
-   
+    display: flex;
+    align-items: center;
+    width:70%;
+    
 }
+.suggestion p:last-child{
+    margin-left:75px;
+}
+
+
 .suggestion-title{
     display: flex;
     align-items: center;
