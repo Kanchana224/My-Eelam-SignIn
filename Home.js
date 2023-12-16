@@ -14,18 +14,18 @@ icon.addEventListener('click', function () {
 icon.classList.toggle('bookmarked');
 });
 });
-const openContactPage = () => {
-    document.querySelectorAll('.contactPage').forEach(element => {
-      element.style.display = 'flex';
-    });
-  };
+// const openContactPage = () => {
+//     document.querySelectorAll('.contactPage').forEach(element => {
+//       element.style.display = 'flex';
+//     });
+//   };
 
-  const closeContactPage = () => {
-    document.querySelectorAll('.contactPage').forEach(element => {
-      element.style.display = 'none';
-    });
-  };
+//   const closeContactPage = () => {
+//     document.querySelectorAll('.contactPage').forEach(element => {
+//       element.style.display = 'none';
+//     });
+//   };
 
-  document.querySelectorAll('.openContactPage').forEach(element => {
-    element.addEventListener('click', openContactPage);
-  });
+//   document.querySelectorAll('.openContactPage').forEach(element => {
+//     element.addEventListener('click', openContactPage);
+//   });
