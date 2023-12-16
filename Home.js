@@ -33,3 +33,7 @@ icon.classList.toggle('bookmarked');
 //   document.querySelectorAll('.openContactPage').forEach(element => {
 //     element.addEventListener('click', openContactPage);
 //   });
+document.getElementById('navbarCollapse').addEventListener('click', function () {
+    const navbarCollapse = document.getElementById('navbarCollapse');
+    navbarCollapse.classList.toggle('show');
+});
