@@ -14,6 +14,10 @@ icon.addEventListener('click', function () {
 icon.classList.toggle('bookmarked');
 });
 });
+// document.getElementById('notifDropdownToggle').addEventListener('click', function () {
+//     const dropdown = document.getElementById('notifDropdownContent');
+//     dropdown.classList.toggle('show');
+// });
 // const openContactPage = () => {
 //     document.querySelectorAll('.contactPage').forEach(element => {
 //       element.style.display = 'flex';

@@ -308,4 +308,32 @@ border: 1px solid black !important;
     right: 10px;
     cursor: pointer;
   } */
-  
+  .notification-badge {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-badge .fa-bell {
+    position: relative;
+}
+
+.notification-badge .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
