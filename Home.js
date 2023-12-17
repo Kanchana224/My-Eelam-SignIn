@@ -24,12 +24,11 @@ $(document).ready(function () {
       $(".dropdown-container").hide();
     });
   
-
     $("#notifDropdown, #profileDropdown").on('click', function (e) {
-      e.stopPropagation(); 
-      $(this).parent().find('.dropdown-menu').toggle();
+      e.stopPropagation();
+      $(this).next('.dropdown-menu').toggle();
     });
-
+  
     $(document).on('click', function (e) {
       if (!$(e.target).closest('.nav-item.dropdown').length) {
         $(".dropdown-menu").hide();

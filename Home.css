@@ -358,7 +358,13 @@ border: 1px solid black !important;
     background-color: rgb(237, 245, 246);
     border-radius:20px;
     text-align: center;
-    font-size: 13px;
+    font-size:13px;
+    
+    
     
   }
-  
+  .dropdown-container li{
+    font-size: 14px;
+  display: block; /* Use block instead of grid */
+  padding: 8px
+  }
