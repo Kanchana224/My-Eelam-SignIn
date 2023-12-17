@@ -6,7 +6,8 @@
     <title>MY Eelam</title>
     <link rel="stylesheet" href="Home.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <link
       rel="shortcut icon"
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNsqE8-TNYur8WjHKOpvqEc8uXlI7zKL4m9w&usqp=CAU"
@@ -24,13 +25,17 @@
         <div class="nav">
           <ul>
             <li><a href="http://127.0.0.1:5502/Home.html"><i class="fa-solid fa-house"></i></a></li>
-            <li class="nav-item dropdown ms-2">
-              <a class="nav-link bg-light icon-md btn btn-light p-0 show" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true" data-bs-auto-close="outside">
+
+
+            <li class="nav-item ms-2 dropdown">
+              <!-- Bell icon trigger -->
+              <a class="nav-link btn icon-md p-0" href="#" id="notifDropdown" role="button">
                 <div class="notification-badge">
                   <i class="fa-regular fa-bell notification-badge"></i>
-                  <span class="badge">1</span></div>
+                  <span class="badge">1</span>
+                </div>
               </a>
-              <div class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0 show" aria-labelledby="notifDropdown" data-bs-popper="static" style="width:400px;">
+              <div class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0" aria-labelledby="notifDropdown" data-bs-popper="static" style="width:400px; display: none;">
                 <div class="card">
                   <div class="card-header d-flex justify-content-between align-items-center">
                     <h6 class="m-0">Notifications <span class="badge bg-danger bg-opacity-10 text-danger ms-2">4 new</span></h6>
@@ -89,7 +94,7 @@
                       <li>
                         <a href="#" class="list-group-item list-group-item-action rounded d-flex border-0 p-3 mb-1">
                           <div class="avatar text-center d-none d-sm-inline-block">
-                            <img class="avatar-img rounded-circle" src="assets/images/logo/12.svg" alt="">
+                            <img class="avatar-img rounded-circle" src="nazii.jpg" alt="" style="width: 36px;height: 36px;">
                           </div>
                           <div class="ms-sm-3 d-flex">
                             <p class="small mb-2"><b>Hello Everyone:</b> Its my new and first application made by me please follow and support.</p>
@@ -107,94 +112,34 @@
             </li>
             <li><i class="fa-solid fa-envelope"></i><a href="#"></a></li>
             <li><i class="fa-regular fa-square-plus"></i><a href="#"></a></li>
-            <li><button class="navbar-toggler ms-auto icon-md btn btn-light p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
-              <i class="fa-solid fa-bars"></i>
-            </button><div class="navbar-collapse collapse show" id="navbarCollapse">
-
-              <!-- Nav Search START -->
-              <div class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0">
-                <div class="nav-item w-100">
-                  <form class="rounded position-relative">
-                    <input class="form-control ps-5 bg-light" type="search" placeholder="Search..." aria-label="Search">
-                    <button class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y" type="submit"><i class="bi bi-search fs-5"> </i></button>
-                  </form>
-                </div>
-              </div>
-              
-      
-              <ul class="navbar-nav navbar-nav-scroll ms-auto">
-                <!-- Nav item 2 Pages -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                  <ul class="dropdown-menu" aria-labelledby="pagesMenu">
-                    <li> <a class="dropdown-item" href="albums.html">Albums</a></li>
-                    <li> <a class="dropdown-item" href="celebration.html">Celebration</a></li>
-                    <li> <a class="dropdown-item" href="messaging.html">Messaging</a></li>
-                    <!-- Dropdown submenu -->
-                    <li class="dropdown-submenu dropend"> 
-                      <a class="dropdown-item dropdown-toggle" href="#!">Profile</a>
-                      <ul class="dropdown-menu" data-bs-popper="none">
-                        <li> <a class="dropdown-item" href="#">About</a> </li>
-                        <li> <a class="dropdown-item" href="my-profile-connections.html">Connections</a> </li>
-                        <li> <a class="dropdown-item" href="#">Media</a> </li>
-                        <li> <a class="dropdown-item" href="#">Videos</a> </li>
-                        <li> <a class="dropdown-item" href="#">Events</a> </li>
-                        <li> <a class="dropdown-item" href="#">Activity</a> </li>
-                      </ul>
-                    </li>
-                    
-                    <!-- Dropdown submenu levels -->
-                    <li class="dropdown-divider"></li>
-                    <li class="dropdown-submenu dropend">
-                      <a class="dropdown-item dropdown-toggle" href="#">Dropdown levels</a>
-                      <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
-                        <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-                        <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-                        <!-- dropdown submenu open left -->
-                        <li class="dropdown-submenu dropstart">
-                          <a class="dropdown-item dropdown-toggle" href="#">Dropdown (start)</a>
-                          <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
-                            <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-                            <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-                          </ul>
-                        </li>
-                        <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-      
-                <!-- Nav item 3 Post -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="postMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account </a>
-                  <ul class="dropdown-menu" aria-labelledby="postMenu">
-                    <li> <a class="dropdown-item" href="#">Settings</a> </li>
-                    <li> <a class="dropdown-item" href="#">Help center</a> </li>
-                    
-                    <!-- dropdown submenu open left -->
-                      <a class="dropdown-item dropdown-toggle" href="#">Authentication</a>
-                      <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
-                        <li> <a class="dropdown-item" href="http://127.0.0.1:5502/index.html">Sign in</a> </li>
-                        <li> <a class="dropdown-item" href="http://127.0.0.1:5502/signup.html">Sing up</a> </li>
-                        <li> <a class="dropdown-item" href="#">Forgot password</a> </li>
-                      </ul>
-                    </li>
-                    <li> <a class="dropdown-item" href="">Privacy &amp; terms</a> </li>
-                  </ul>
-                </li>
-      
-                <!-- Nav item 4 Mega menu -->
-                <li class="nav-item">
-                  <a class="nav-link" href="my-profile-connections.html">My network</a>
-                </li>
-              </ul>
-            </div></li>
-            <li class="nav-item ms-2 dropdown">
-              <a class="nav-link btn icon-md p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-                <img class="avatar-img rounded-2" src="nazi.jpg" alt="" style="width: 36px; height: 36px;">
-              </a>
-              <ul class="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3 show" aria-labelledby="profileDropdown" data-bs-popper="static">
-                <!-- Profile info -->
+            
+            
+  <li class="search"><button class="navbar-toggler ms-auto icon-md btn btn-light p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <div class="navbar-collapse collapse" id="navbarCollapse"></div>
+  <div class="dropdown-container">
+    <ul class="navbar-nav  ms-auto">
+      <a class="nav-link dropdown-toggle" href="#" id="postMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>Account</b></a>
+        <ul class="dropdown-menu" aria-labelledby="postMenu">
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Help center</a></li>
+          <li><a class="dropdown-item" href="#">Sign Out</a></li>
+          <li><a class="dropdown-item" href="#">Forgot Password</a></li>
+          <li><a class="dropdown-item" href="#">Sign in</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="">Privacy &amp; terms</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</li>
+<li class="nav-item ms-2 dropdown">
+  <a class="nav-link btn icon-md p-0" href="#" id="profileDropdown" role="button">
+    <img class="avatar-img rounded-2" src="nazi.jpg" alt="" style="width: 36px; height: 36px;">
+  </a>
+  <ul class="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3" aria-labelledby="profileDropdown" data-bs-popper="static" style="display: none;">
+    
                 <li class="px-3">
                   <div class="d-flex align-items-center position-relative">
                     <!-- Avatar -->
