@@ -368,3 +368,9 @@ border: 1px solid black !important;
   display: block; /* Use block instead of grid */
   padding: 8px
   }
+  .btn-none::after {
+    display: none !important;
+  }
+  .btn::after {
+    display: none !important;
+  }

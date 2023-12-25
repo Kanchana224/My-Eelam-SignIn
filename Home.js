@@ -35,4 +35,33 @@ $(document).ready(function () {
       }
     });
   });
+
+
+  $(document).ready(function () {
+    // Handle the first dropdown
+    $('.dropdown-center button').click(function (e) {
+      e.stopPropagation(); // Prevents the dropdown from closing immediately after opening
+      $('.dropdown-center .dropdown-menu').toggleClass('show');
+    });
+
+    // Close the first dropdown when clicking outside of it
+    $(document).click(function (e) {
+      if (!$('.dropdown-center').is(e.target) && $('.dropdown-center').has(e.target).length === 0) {
+        $('.dropdown-center .dropdown-menu').removeClass('show');
+      }
+    });
+
+    // Handle the second dropdown
+    $('.custom-dropdown button').click(function (e) {
+      e.stopPropagation(); // Prevents the dropdown from closing immediately after opening
+      $('.custom-dropdown .dropdown-menu').toggleClass('show');
+    });
+
+    // Close the second dropdown when clicking outside of it
+    $(document).click(function (e) {
+      if (!$('.custom-dropdown').is(e.target) && $('.custom-dropdown').has(e.target).length === 0) {
+        $('.custom-dropdown .dropdown-menu').removeClass('show');
+      }
+    });
+  });
   
